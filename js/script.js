@@ -11,12 +11,12 @@ const SERVICES_DATA = [
 ];
 
 const SKILLS_DATA = [
-  { name: "HTML", percentage: 95, category: "technical" },
-  { name: "CSS", percentage: 90, category: "technical" },
+  { name: "HTML-CSS", percentage: 95, category: "technical" },
   { name: "Tailwind CSS", percentage: 98, category: "technical" },
   { name: "JavaScript", percentage: 95, category: "technical" },
-  { name: "Full Stack Development", percentage: 90, category: "technical" },
-  { name: "Programming & APIs", percentage: 88, category: "technical" },
+  { name: "PHP", percentage: 90, category: "technical" },
+  { name: "LARAVEL", percentage: 90, category: "technical" },
+  { name: "VUE JS", percentage: 88, category: "technical" },
   { name: "Graphic Design", percentage: 95, category: "creative" },
   { name: "Adobe Photoshop", percentage: 92, category: "creative" },
   { name: "Video Editing", percentage: 88, category: "creative" },
