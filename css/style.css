@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.bg-mesh-pattern {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.dark .bg-mesh-pattern {
+  background-image: radial-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: inherit;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+.typing-cursor {
+  border-right: 3px solid currentColor;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 4s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+  from { height: 0; opacity: 0; }
+  to { height: auto; opacity: 1; }
+}
+@keyframes slideUp {
+  from { height: auto; opacity: 1; }
+  to { height: 0; opacity: 0; }
+}
+
+.preloader-exit {
+  opacity: 0 !important;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.skill-bar-fill {
+  transition: width 1.2s ease-out;
+}
+
+/* Modal */
+.modal-overlay {
+  transition: opacity 0.3s ease;
+}
+.modal-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-overlay:not(.show) {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-content {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+.modal-overlay.show .modal-content {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+.modal-overlay:not(.show) .modal-content {
+  transform: scale(0.95) translateY(15px);
+  opacity: 0;
+}
+
+/* Back to top */
+.back-to-top {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.back-to-top.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:not(.show) {
+  opacity: 0;
+  transform: scale(0.8) translateY(10px);
+  pointer-events: none;
+}
+
+/* Scroll reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.scroll-reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+.scroll-reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.scroll-reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.glassmorphism {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom scale values */
+.group:hover .group-hover\\:scale-108 {
+  transform: scale(1.08);
+}
+.group:hover .group-hover\\:scale-115 {
+  transform: scale(1.15);
+}
+
+/* Custom sizes */
+.h-4\\.5 { height: 1.125rem; }
+.w-4\\.5 { width: 1.125rem; }
+
+/* Custom backdrop blur */
+.backdrop-blur-xs {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* Form input focus ring animation */
+.form-input {
+  transition: all 0.3s ease;
+}
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+.dark .form-input:focus {
+  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.1);
+}
+
+/* Success banner animation */
+@keyframes slideDownBanner {
+  from { opacity: 0; transform: translateY(-10px); max-height: 0; }
+  to { opacity: 1; transform: translateY(0); max-height: 200px; }
+}
+.form-success-show {
+  display: flex !important;
+  animation: slideDownBanner 0.4s ease forwards;
+}
+
+/* Error shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); }
+  20%, 40%, 60%, 80% { transform: translateX(3px); }
+}
+.error-shake {
+  animation: shake 0.4s ease;
+}
+
+/* Filter button transition */
+.filter-btn {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filter-btn:hover {
+  transform: translateY(-1px);
+}
+.filter-btn:active {
+  transform: translateY(0);
+}
+
+/* Card entrance animation for filtered items */
+@keyframes cardEntrance {
+  from { opacity: 0; transform: scale(0.9) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.project-card-enter {
+  animation: cardEntrance 0.4s ease forwards;
+}
+
+/* Gradient text animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Float animation for badges */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+.animate-float-delayed {
+  animation: float 3s ease-in-out 1.5s infinite;
+}
+
+/* Line clamp */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Infinite scroll for skill bars */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skill-bar-fill {
+  background-size: 200% 100%;
+  background-image: linear-gradient(90deg, #4f46e5 25%, #818cf8 50%, #4f46e5 75%);
+}
+.dark .skill-bar-fill {
+  background-image: linear-gradient(90deg, #06b6d4 25%, #22d3ee 50%, #06b6d4 75%);
+}

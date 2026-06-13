@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy &amp; Security Policy | AL-MOKTADIR</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            slate: {
+              105: '#f1f5f9', 150: '#e8edf4', 250: '#dce2ec', 450: '#94a3b8',
+              550: '#64748b', 650: '#525e75', 805: '#1a1f2e', 850: '#141824',
+              930: '#0d1117', 950: '#0b0f1a',
+            },
+            indigo: { 650: '#4f46e5' },
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-[#070a13] text-slate-800 dark:text-slate-100 font-sans transition-colors duration-300 bg-mesh-pattern selection:bg-indigo-500/20">
+  <div id="main-container">
+
+    <!-- STICKY NAVBAR -->
+    <nav id="navbar" class="sticky top-0 z-40 w-full bg-white/80 dark:bg-[#070a13]/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex-shrink-0 flex items-center space-x-2.5 cursor-pointer">
+            <div class="p-2 bg-indigo-600 dark:bg-cyan-500 rounded-lg text-white font-bold inline-flex hover:rotate-12 transition-transform duration-300 shadow">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"/><path d="M13.5 6.5L17 3h4v4l-3.5 3.5"/><path d="M3 3l7.07 7.07"/><path d="M21 21l-5.5-5.5"/></svg>
+            </div>
+            <span class="font-display font-bold text-lg sm:text-xl tracking-wider text-slate-900 dark:text-white">AL-MOKTADIR</span>
+          </a>
+          <div class="hidden md:flex items-center">
+            <span class="font-mono text-xs font-semibold uppercase tracking-widest text-indigo-600 dark:text-cyan-400 px-4 py-1.5 bg-indigo-50/60 dark:bg-cyan-500/5 rounded-full border border-indigo-100/40 dark:border-cyan-500/10">Privacy &amp; Security Policy</span>
+          </div>
+          <div class="flex items-center space-x-3">
+            <button id="theme-toggle" onclick="toggleTheme()" class="p-2.5 rounded-lg text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-850 focus:outline-none transition-colors cursor-pointer" aria-label="Toggle theme mode">
+              <svg id="theme-icon-moon" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              <svg id="theme-icon-moon-default" class="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              <svg id="theme-icon-sun" class="h-5 w-5 hidden text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            </button>
+            <a href="index.html" class="hidden sm:inline-flex items-center px-4 py-2.5 font-display text-sm font-semibold tracking-wide text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer">
+              <svg class="mr-1.5 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="bg-white/60 dark:bg-slate-900/30 border-b border-slate-150 dark:border-slate-900/50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <nav class="flex items-center space-x-2 text-xs font-mono text-slate-450 dark:text-slate-500">
+          <a href="index.html" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Home</a>
+          <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          <span class="text-indigo-600 dark:text-cyan-400 font-semibold">Privacy &amp; Security Policy</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section class="py-16 md:py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="space-y-2 mb-12 text-center">
+          <h1 class="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-slate-900 dark:text-white tracking-tight">Privacy &amp; Security <span class="text-indigo-600 dark:text-cyan-400">Policy</span></h1>
+          <p class="text-sm text-slate-500 dark:text-slate-400 font-light max-w-xl mx-auto">Last updated: June 2026</p>
+        </div>
+
+        <div class="space-y-10">
+          <!-- 1. Introduction -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">1. Introduction</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+              <strong class="text-slate-900 dark:text-white font-semibold">AL-MOKTADIR</strong> is committed to protecting your privacy and maintaining the security of any personal information you entrust to us. This Privacy &amp; Security Policy outlines how we collect, use, store, and safeguard your data when you visit our website or utilize our services. We take your privacy seriously and strive to be transparent about our data practices.
+            </p>
+          </div>
+
+          <!-- 2. Information Collected -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">2. Information Collected</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed mb-5">
+              We may collect the following types of information when you interact with our website or services:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/40 rounded-lg">
+                <svg class="h-4 w-4 text-indigo-600 dark:text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">Full Name</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/40 rounded-lg">
+                <svg class="h-4 w-4 text-indigo-600 dark:text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">Email Address</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/40 rounded-lg">
+                <svg class="h-4 w-4 text-indigo-600 dark:text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">Contact Information</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/40 rounded-lg">
+                <svg class="h-4 w-4 text-indigo-600 dark:text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">Information submitted via contact forms</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-slate-50 dark:bg-slate-900/40 rounded-lg sm:col-span-2">
+                <svg class="h-4 w-4 text-indigo-600 dark:text-cyan-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span class="text-xs sm:text-sm text-slate-700 dark:text-slate-300 font-medium">Basic technical data necessary for website functionality (browser type, device information, analytical metrics)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. How Information Is Used -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">3. How Information Is Used</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed mb-5">
+              The information we collect is used solely for legitimate business purposes, including:
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">Responding to inquiries, proposals, and service requests submitted through our contact forms.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">Communicating with clients regarding project progress, deliverables, and business-related updates.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">Improving website functionality, user experience, and content relevance based on aggregated usage data.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">Providing customer support and resolving technical or service-related issues.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 4. Data Protection -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">4. Data Protection</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+              We implement reasonable and appropriate technical, administrative, and physical security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. These measures include secure data storage, encrypted communications where applicable, and restricted access to personal data on a need-to-know basis. However, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.
+            </p>
+          </div>
+
+          <!-- 5. Cookies -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">5. Cookies &amp; Browser Storage</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+              This website may use essential cookies and browser local storage features to enhance user experience and remember user preferences, such as theme mode (light/dark) selections. These storage mechanisms do not track your browsing activity across external websites. You may choose to disable cookies through your browser settings, though this may affect certain functionality of the website.
+            </p>
+          </div>
+
+          <!-- 6. Third-Party Services -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">6. Third-Party Services</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+              AL-MOKTADIR does not unnecessarily integrate or share data with third-party services. Our website is built to operate independently with minimal external dependencies. If any third-party services become necessary for functionality or analytics in the future, users will be informed and provided with relevant details about how their data may be handled by such services.
+            </p>
+          </div>
+
+          <!-- 7. User Rights -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">7. User Rights</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed mb-5">
+              You have the following rights regarding your personal information:
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed"><strong class="text-slate-800 dark:text-slate-200 font-semibold">Access:</strong> You may request access to any personal information we hold about you that was submitted through our website or during project engagements.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed"><strong class="text-slate-800 dark:text-slate-200 font-semibold">Correction:</strong> You may request that we correct any inaccurate or incomplete information we have about you.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="h-4 w-4 text-emerald-500 shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed"><strong class="text-slate-800 dark:text-slate-200 font-semibold">Deletion:</strong> You may request that we delete your personal information where applicable, subject to any legal obligations requiring data retention.</span>
+              </li>
+            </ul>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-light mt-4">To exercise any of these rights, please contact us using the information provided in Section 10 below.</p>
+          </div>
+
+          <!-- 8. Children's Privacy -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">8. Children's Privacy</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+              The services and content provided by AL-MOKTADIR are not intentionally directed toward or designed to attract individuals under the age required by applicable law. We do not knowingly collect personal information from minors. If we become aware that a minor has provided us with personal information without appropriate consent, we will take steps to delete such information promptly.
+            </p>
+          </div>
+
+          <!-- 9. Policy Updates -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">9. Policy Updates</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+              This Privacy &amp; Security Policy may be updated periodically to reflect changes in our data practices, legal requirements, or website functionality. When material changes are made, the "Last updated" date at the top of this page will be revised. We encourage users to review this page periodically to stay informed about how we are protecting your information.
+            </p>
+          </div>
+
+          <!-- 10. Contact Information -->
+          <div class="scroll-reveal bg-white dark:bg-slate-900/20 p-6 sm:p-8 rounded-2xl border border-slate-200/50 dark:border-slate-800/40 shadow-sm">
+            <div class="flex items-center gap-4 mb-5">
+              <div class="p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-xl text-indigo-600 dark:text-cyan-400 shrink-0">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">10. Contact Information</h2>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-light leading-relaxed mb-5">
+              If you have any questions, concerns, or requests regarding this Privacy &amp; Security Policy or how your data is handled, please contact us through the following channels:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="p-4 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-150 dark:border-slate-800/40 text-center space-y-2">
+                <div class="inline-flex p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-lg text-indigo-600 dark:text-cyan-400">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <p class="font-mono text-[9px] font-bold text-slate-400 uppercase tracking-widest">Email</p>
+                <a href="mailto:contact@al-moktadir.dev" class="font-display font-medium text-xs sm:text-sm text-slate-800 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">contact@al-moktadir.dev</a>
+              </div>
+              <div class="p-4 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-150 dark:border-slate-800/40 text-center space-y-2">
+                <div class="inline-flex p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-lg text-indigo-600 dark:text-cyan-400">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <p class="font-mono text-[9px] font-bold text-slate-400 uppercase tracking-widest">Phone</p>
+                <a href="tel:+1234567890" class="font-display font-medium text-xs sm:text-sm text-slate-800 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">+1 (234) 567-890</a>
+              </div>
+              <div class="p-4 bg-slate-50 dark:bg-slate-900/40 rounded-xl border border-slate-150 dark:border-slate-800/40 text-center space-y-2">
+                <div class="inline-flex p-2.5 bg-indigo-50 dark:bg-cyan-500/10 rounded-lg text-indigo-600 dark:text-cyan-400">
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <p class="font-mono text-[9px] font-bold text-slate-400 uppercase tracking-widest">Location</p>
+                <p class="font-display font-medium text-xs sm:text-sm text-slate-800 dark:text-slate-200">Dhaka, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BACK TO HOME BUTTON -->
+        <div class="mt-12 text-center scroll-reveal">
+          <a href="index.html" class="inline-flex items-center px-6 py-3.5 font-display text-sm font-semibold tracking-wide text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer">
+            <svg class="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-[#04060a] border-t border-slate-200/50 dark:border-slate-900 pt-16 pb-12 overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-slate-250 dark:border-slate-900">
+          <div class="md:col-span-1 lg:col-span-5 space-y-4">
+            <div class="flex items-center space-x-2.5">
+              <div class="p-2 bg-indigo-600 dark:bg-cyan-500 rounded-lg text-white font-bold inline-flex">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"/><path d="M13.5 6.5L17 3h4v4l-3.5 3.5"/><path d="M3 3l7.07 7.07"/><path d="M21 21l-5.5-5.5"/></svg>
+              </div>
+              <span class="font-display font-bold text-lg tracking-wider text-slate-900 dark:text-white">AL-MOKTADIR</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed max-w-sm">A premium digital agency and personal brand delivering elite full stack engineering, advanced client programming systems, and visual eSports brand vectors worldwide.</p>
+            <div class="flex space-x-2.5 pt-2">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded bg-slate-100 dark:bg-slate-850 text-slate-500 hover:text-indigo-650 dark:hover:text-cyan-400 transition-colors" aria-label="Social Link Github">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded bg-slate-100 dark:bg-slate-850 text-slate-500 hover:text-indigo-650 dark:hover:text-cyan-400 transition-colors" aria-label="Social Link Twitter">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded bg-slate-100 dark:bg-slate-850 text-slate-500 hover:text-indigo-650 dark:hover:text-cyan-400 transition-colors" aria-label="Social Link Instagram">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mahi-al-moktadir" target="_blank" rel="noopener noreferrer" class="p-2 rounded bg-slate-100 dark:bg-slate-850 text-slate-500 hover:text-indigo-650 dark:hover:text-cyan-400 transition-colors" aria-label="Social Link LinkedIn">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-3 space-y-4">
+            <h5 class="font-display font-bold text-sm text-slate-900 dark:text-white uppercase tracking-wider">Quick Navigation</h5>
+            <ul class="space-y-2.5 text-xs">
+              <li><a href="index.html" class="text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors capitalize">home</a></li>
+              <li><a href="index.html#services" class="text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors capitalize">services</a></li>
+              <li><a href="index.html#skills" class="text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors capitalize">skills</a></li>
+              <li><a href="index.html#products" class="text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors capitalize">products</a></li>
+              <li><a href="index.html#contact" class="text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-cyan-400 transition-colors capitalize">contact</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-4 space-y-4">
+            <h5 class="font-display font-bold text-sm text-slate-900 dark:text-white uppercase tracking-wider">Premium Core Services</h5>
+            <ul class="space-y-2.5 text-xs text-slate-500 dark:text-slate-400">
+              <li>Full Stack Web Development</li>
+              <li>Custom Programming &amp; API Links</li>
+              <li>Creative Graphic Design Systems</li>
+              <li>Cinematic Sound &amp; Video Editing</li>
+              <li>Elite eSports Interactive Branding</li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-450 dark:text-slate-500">
+          <p>&copy; 2026 AL-MOKTADIR. All Rights Reserved.</p>
+          <div class="flex space-x-4">
+            <a href="terms.html" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Term Conditions</a>
+            <a href="privacy.html" class="hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors">Privacy Security Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="back-to-top fixed bottom-6 right-6 z-40 p-3 text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-cyan-500 dark:hover:bg-cyan-600 rounded-xl shadow-2xl transition-colors duration-300 cursor-pointer pointer-events-auto" aria-label="Scroll back top top">
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
